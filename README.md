@@ -1,6 +1,7 @@
 # 💎 Wealthora — Smart Personal Finance & Expense Intelligence Platform
 
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20Application-brightgreen?style=for-the-badge&logo=googlechrome&logoColor=white)](https://wealthora.pythonanywhere.com)
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/keerthana22r-oss/wealthora)
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Application-brightgreen?style=for-the-badge&logo=render&logoColor=white)](https://wealthora.onrender.com)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/keerthana22r-oss/wealthora)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -156,16 +157,19 @@ Open **`http://127.0.0.1:8000`** in your browser.
 
 ---
 
-## 🚀 Deployment Guide (PythonAnywhere / Free Cloud)
+## 🚀 One-Click Cloud Deployment (Render Blueprint)
 
-Wealthora is architected to deploy seamlessly to **PythonAnywhere** (native MySQL support) or **Render** (PostgreSQL):
+Wealthora includes a native **`render.yaml`** Infrastructure-as-Code blueprint with automated PostgreSQL provisioning:
 
-1. **PythonAnywhere Setup (Recommended for MySQL)**:
-   - Create a free account at [pythonanywhere.com](https://www.pythonanywhere.com).
-   - Clone this repo in the Web Bash console.
-   - Create a MySQL instance in the dashboard and update `.env`.
-   - Run `python manage.py collectstatic` and `python manage.py migrate`.
-   - Link WSGI to `wealthora.wsgi` and your app is live!
+1. Click the **Deploy to Render** button at the top, or log in to **[dashboard.render.com](https://dashboard.render.com)**.
+2. Click **New +** ➔ **Blueprint**.
+3. Select your repository: **`keerthana22r-oss/wealthora`**.
+4. Click **Apply**:
+   - Render automatically creates the **PostgreSQL database** (`wealthora-db`).
+   - Links the connection string via `DATABASE_URL`.
+   - Runs `pip install`, compiles static assets with **WhiteNoise**, and applies database migrations.
+   - Starts the production WSGI server with **Gunicorn**.
+5. Your live application will be live at `https://wealthora-xxxx.onrender.com` in ~2 minutes!
 
 ---
 

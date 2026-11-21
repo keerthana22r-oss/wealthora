@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: wealthora
+    runtime: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --no-input && python manage.py migrate"
+    startCommand: "gunicorn wealthora.wsgi:application"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.14
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: wealthora-db
+          property: connectionString
+
+databases:
+  - name: wealthora-db
+    databaseName: wealthora_db
+    user: wealthora_user
+    plan: free
