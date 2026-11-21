@@ -1,7 +1,7 @@
 # 💎 Wealthora — Smart Personal Finance & Expense Intelligence Platform
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/keerthana22r-oss/wealthora)
-[![Live Demo](https://img.shields.io/badge/Demo-Live%20Application-brightgreen?style=for-the-badge&logo=render&logoColor=white)](https://wealthora.onrender.com)
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20Application-brightgreen?style=for-the-badge&logo=render&logoColor=white)](https://wealthora-g58m.onrender.com)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/keerthana22r-oss/wealthora)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
@@ -169,7 +169,7 @@ Wealthora includes a native **`render.yaml`** Infrastructure-as-Code blueprint w
    - Links the connection string via `DATABASE_URL`.
    - Runs `pip install`, compiles static assets with **WhiteNoise**, and applies database migrations.
    - Starts the production WSGI server with **Gunicorn**.
-5. Your live application will be live at `https://wealthora-xxxx.onrender.com` in ~2 minutes!
+5. The live application is active at **[https://wealthora-g58m.onrender.com](https://wealthora-g58m.onrender.com)**!
 
 ---
 
