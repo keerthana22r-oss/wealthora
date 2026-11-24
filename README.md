@@ -1,6 +1,5 @@
 # 💎 Wealthora — Smart Personal Finance & Expense Intelligence Platform
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/keerthana22r-oss/wealthora)
 [![Live Demo](https://img.shields.io/badge/Demo-Live%20Application-brightgreen?style=for-the-badge&logo=render&logoColor=white)](https://wealthora-g58m.onrender.com)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/keerthana22r-oss/wealthora)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
@@ -155,21 +154,6 @@ python manage.py runserver
 
 Open **`http://127.0.0.1:8000`** in your browser.
 
----
-
-## 🚀 One-Click Cloud Deployment (Render Blueprint)
-
-Wealthora includes a native **`render.yaml`** Infrastructure-as-Code blueprint with automated PostgreSQL provisioning:
-
-1. Click the **Deploy to Render** button at the top, or log in to **[dashboard.render.com](https://dashboard.render.com)**.
-2. Click **New +** ➔ **Blueprint**.
-3. Select your repository: **`keerthana22r-oss/wealthora`**.
-4. Click **Apply**:
-   - Render automatically creates the **PostgreSQL database** (`wealthora-db`).
-   - Links the connection string via `DATABASE_URL`.
-   - Runs `pip install`, compiles static assets with **WhiteNoise**, and applies database migrations.
-   - Starts the production WSGI server with **Gunicorn**.
-5. The live application is active at **[https://wealthora-g58m.onrender.com](https://wealthora-g58m.onrender.com)**!
 
 ---
 
